@@ -1,24 +1,15 @@
 "use client";
 
-import { useEffect } from "react";
-
-export default function GlobalError({
-  error,
-  reset,
-}: {
-  error: Error & { digest?: string };
-  reset: () => void;
-}) {
-  useEffect(() => {
-    console.error("Global error:", error);
-  }, [error]);
-
+export default function GlobalError() {
   return (
     <html>
+      <head>
+        <title>Error</title>
+      </head>
       <body>
-        <div style={{ padding: "2rem", textAlign: "center" }}>
-          <h1>Something went wrong!</h1>
-          <button onClick={reset}>Try again</button>
+        <div style={{ padding: "2rem", textAlign: "center", minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+          <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Something went wrong!</h1>
+          <p style={{ color: "#6b7280" }}>An error occurred</p>
         </div>
       </body>
     </html>
