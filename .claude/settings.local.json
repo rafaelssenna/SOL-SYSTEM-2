@@ -10,7 +10,8 @@
       "Bash(npm run build:*)",
       "Bash(npm install:*)",
       "Bash(npx turbo build:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(git clone:*)"
     ]
   }
 }

@@ -3,10 +3,12 @@ npm warn Unknown project config "auto-install-peers". This will stop working in 
 > @sol/web@0.1.0 build
 > next build
 
-   ▲ Next.js 15.1.3
+   ▲ Next.js 15.5.8
+   - Experiments (use with caution):
+     · serverActions
 
    Creating an optimized production build ...
- ✓ Compiled successfully
+ ✓ Compiled successfully in 16.9s
    Skipping validation of types
    Skipping linting
    Collecting page data ...
@@ -18,23 +20,23 @@ npm warn Unknown project config "auto-install-peers". This will stop working in 
    Finalizing page optimization ...
    Collecting build traces ...
 
-Route (app)                              Size     First Load JS
-┌ ○ /                                    3.13 kB         129 kB
-├ ○ /_not-found                          137 B           106 kB
-├ ○ /dashboard                           6.7 kB          146 kB
-├ ○ /items                               2.82 kB         117 kB
-├ ○ /login                               5.69 kB         144 kB
-├ ○ /negotiations                        1.07 kB         115 kB
-├ ○ /quotations                          1.11 kB         115 kB
-├ ○ /register                            4.38 kB         143 kB
-├ ○ /reports                             1.05 kB         115 kB
-├ ○ /search                              1.04 kB         115 kB
-├ ○ /settings                            1.12 kB         115 kB
-└ ○ /suppliers                           2.78 kB         117 kB
-+ First Load JS shared by all            105 kB
-  ├ chunks/855-e54dfaebc70b8b37.js       50.5 kB
-  ├ chunks/87c73c54-d026976b5a21b61a.js  52.9 kB
-  └ other shared chunks (total)          1.97 kB
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    3.11 kB         126 kB
+├ ○ /_not-found                            122 B         102 kB
+├ ○ /dashboard                           6.61 kB         143 kB
+├ ○ /items                               2.84 kB         114 kB
+├ ○ /login                               5.68 kB         140 kB
+├ ○ /negotiations                        1.05 kB         112 kB
+├ ○ /quotations                           1.1 kB         112 kB
+├ ○ /register                            4.38 kB         139 kB
+├ ○ /reports                             1.04 kB         112 kB
+├ ○ /search                              1.03 kB         112 kB
+├ ○ /settings                            1.11 kB         112 kB
+└ ○ /suppliers                           2.79 kB         114 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/18-7011271174934fe8.js          46 kB
+  ├ chunks/87c73c54-24122e7b92478d00.js  54.2 kB
+  └ other shared chunks (total)          1.98 kB
 
 
 ○  (Static)  prerendered as static content
