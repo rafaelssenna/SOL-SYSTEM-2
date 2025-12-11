@@ -48,8 +48,9 @@ export default function RegisterPage() {
         phone: formData.phone || undefined,
       });
       router.push("/login?registered=true");
-    } catch (err: any) {
-      setError(err.response?.data?.detail || "Erro ao criar conta. Tente novamente.");
+    } catch (err) {
+      const error = err as { response?: { data?: { detail?: string } } };
+      setError(error.response?.data?.detail || "Erro ao criar conta. Tente novamente.");
       console.error("Register error:", err);
     } finally {
       setIsLoading(false);
