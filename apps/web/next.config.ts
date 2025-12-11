@@ -15,6 +15,13 @@ const nextConfig: NextConfig = {
     },
   },
   transpilePackages: ["@sol/ui", "@sol/types"],
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  output: "standalone",
 };
 
 export default nextConfig;
