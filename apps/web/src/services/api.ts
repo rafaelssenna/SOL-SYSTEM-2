@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://sol-backend-production.up.railway.app";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://sol-system-2-production.up.railway.app";
 
 export const api = axios.create({
   baseURL: API_URL,
